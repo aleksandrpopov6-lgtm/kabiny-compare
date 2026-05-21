@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Сравнение цифровых кабин — цены и комплектация 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-label="Logo">
+          <rect x="3" y="3" width="26" height="26" rx="5" fill="#FF4F12"/>
+          <rect x="9" y="10" width="14" height="12" rx="2" fill="#fff"/>
+          <rect x="13" y="14" width="6" height="8" rx="1" fill="#FF4F12"/>
+        </svg>
+        <span>Сравнение цифровых кабин</span>
+      </div>
+      <div class="topbar__meta">Прайс действителен до 31.01.2026 · цены без НДС</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Цифровые кабины — сравнение по цене, комплектации и&nbsp;вместимости</h1>
+      <p class="hero__lead">Три производителя, 10 уникальных моделей (плюс 4 варианта LWOOP с рассрочкой). Цены от 620 000 до 1 470 000 ₽ за единицу. Сравните модели, отфильтруйте по вместимости и выберите оптимальную конфигурацию.</p>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__value">10</span><span class="stat__label">моделей</span></div>
+        <div class="stat"><span class="stat__value">3</span><span class="stat__label">бренда</span></div>
+        <div class="stat"><span class="stat__value">1–4</span><span class="stat__label">человека</span></div>
+        <div class="stat"><span class="stat__value">от 620 тыс.</span><span class="stat__label">₽ минимальная цена</span></div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Фильтры">
+      <div class="filters">
+        <span class="filters__label">Вместимость:</span>
+        <button class="chip is-active" data-capacity="all">Все</button>
+        <button class="chip" data-capacity="1">1 человек</button>
+        <button class="chip" data-capacity="2">2 человека</button>
+        <button class="chip" data-capacity="4">4 человека</button>
+      </div>
+      <div class="filters">
+        <span class="filters__label">Бренд:</span>
+        <button class="chip chip--brand is-active" data-brand="all">Все</button>
+        <button class="chip chip--brand" data-brand="Capsula">Capsula</button>
+        <button class="chip chip--brand" data-brand="Qubius">Qubius</button>
+        <button class="chip chip--brand" data-brand="LWOOP">LWOOP</button>
+        <button class="chip chip--brand" data-brand="LWOOP+">LWOOP (рассрочка)</button>
+      </div>
+      <div class="sort">
+        <label for="sort">Сортировка:</label>
+        <select id="sort">
+          <option value="price-asc">По цене ↑</option>
+          <option value="price-desc">По цене ↓</option>
+          <option value="capacity-asc">По вместимости ↑</option>
+          <option value="warranty-desc">По гарантии ↓</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="cards" id="cards" aria-label="Карточки моделей"></section>
+
+    <section class="table-wrap">
+      <h2>Сводная таблица</h2>
+      <div class="table-scroll">
+        <table class="compare-table" id="table">
+          <thead>
+            <tr>
+              <th>Модель</th>
+              <th>Бренд</th>
+              <th>Вместимость</th>
+              <th class="num">Цена от, ₽</th>
+              <th>Звукоизоляция</th>
+              <th>Габариты (Ш×Г×В)</th>
+              <th>Гарантия</th>
+              <th>Срок поставки</th>
+              <th>Мебель</th>
+              <th>Розетки / USB</th>
+              <th>Особенности</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="winners">
+      <h2>Лучший выбор по соотношению цена/качество</h2>
+      <div class="winners__grid">
+        <article class="winner">
+          <div class="winner__badge">1 место</div>
+          <h3>На 1 человека</h3>
+          <p class="winner__name">LWOOP ONE sky</p>
+          <p class="winner__price">от 620 000 ₽</p>
+          <ul>
+            <li>Самая низкая цена в категории</li>
+            <li>Гарантия 7 лет на каркас (рекорд)</li>
+            <li>Звукоизоляция &gt;32 дБ, вентиляция 91 м³</li>
+            <li>Барный стул с регулировкой высоты в комплекте</li>
+          </ul>
+        </article>
+        <article class="winner">
+          <div class="winner__badge">1 место</div>
+          <h3>На 2 человек</h3>
+          <p class="winner__name">LWOOP DOUBLE sky</p>
+          <p class="winner__price">от 999 500 ₽</p>
+          <ul>
+            <li>Дешевле Qubius Team на 270 тыс. ₽</li>
+            <li>Гарантия 7 лет vs 5 лет у Qubius</li>
+            <li>2 одноместных дивана, стол, вентиляция 110 м³</li>
+            <li>Стальной корпус, авиационный алюминий</li>
+          </ul>
+        </article>
+        <article class="winner">
+          <div class="winner__badge">1 место</div>
+          <h3>На 4 человек</h3>
+          <p class="winner__name">LWOOP FOUR sky</p>
+          <p class="winner__price">от 1 190 000 ₽</p>
+          <ul>
+            <li>Самая низкая цена среди 4-местных</li>
+            <li>2 трёх-четырёхместных дивана</li>
+            <li>Мощная вентиляция 283 м³</li>
+            <li>Гарантия 7 лет</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="insights">
+      <h2>Ключевые наблюдения</h2>
+      <div class="insights__grid">
+        <div class="insight">
+          <div class="insight__num">01</div>
+          <h4>LWOOP — лидер по цене и гарантии</h4>
+          <p>Во всех трёх категориях вместимости LWOOP даёт минимальную цену и максимальную гарантию (7 лет на каркас против 2–5 лет у конкурентов).</p>
+        </div>
+        <div class="insight">
+          <div class="insight__num">02</div>
+          <h4>Qubius — самый дорогой, но премиум</h4>
+          <p>Модели Qubius на 100–200 тыс. ₽ дороже аналогов. Преимущества: HPL-отделка на выбор, мощная вентиляция до 2600 м³/час (Team+), стекло триплекс 9–9,5 мм.</p>
+        </div>
+        <div class="insight">
+          <div class="insight__num">03</div>
+          <h4>Capsula — самый богатый комплект</h4>
+          <p>В базовой стоимости: беспроводная зарядка, магнитные аксессуары, индикаторы занятости, шпонированная отделка. У других — это опции за доплату.</p>
+        </div>
+        <div class="insight">
+          <div class="insight__num">04</div>
+          <h4>Звукоизоляция: Capsula впереди</h4>
+          <p>Все модели Capsula — 39 дБ, Qubius и LWOOP — ≥32 дБ. Разница в 7 дБ воспринимается ухом как вдвое тише.</p>
+        </div>
+        <div class="insight">
+          <div class="insight__num">05</div>
+          <h4>Срок поставки</h4>
+          <p>LWOOP — 50 рабочих дней (≈70 кал. дней). Qubius — 45–60 раб. дней. Capsula — 60 кал. дней (UNO/DUO) или 90 (QUATRO).</p>
+        </div>
+        <div class="insight">
+          <div class="insight__num">06</div>
+          <h4>Рассрочка</h4>
+          <p>У всех брендов есть рассрочка на 6 мес. LWOOP в прайсе показан в двух вариантах: базовая цена и цена с учётом рассрочки (на 4–5% выше).</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Источник данных: прайс-лист «Цифровые кабины» (kabiny-020426.pdf), презентация Ростелеком Бизнес (dlia-klienta-2026.pdf).</p>
+      <p>* Все цены указаны без НДС. Действительны до 31.01.2026. Стандартный срок производства уточняется у поставщика.</p>
+    </footer>
+  </main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
