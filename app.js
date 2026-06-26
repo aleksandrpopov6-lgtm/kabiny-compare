@@ -26,7 +26,7 @@ function brandClass(brand, prefix) {
     "Capsula": "",
     "Qubius": prefix + "--qubius",
     "LWOOP": prefix + "--lwoop",
-    "LWOOP+": prefix + "--lwoop-i"
+    "Рассрочка": prefix + "--lwoop-i"
   };
   return map[brand] || "";
 }

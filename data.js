@@ -240,10 +240,19 @@ const CABINS = [
   }
 ];
 
-// Альтернативный прайс LWOOP с учётом рассрочки
+// Цены с учётом рассрочки 6 мес (с НДС) — все бренды, прайс июнь 2026
 const CABINS_LWOOP_INSTALLMENT = [
-  { id: "lwoop-one-sky-i", image: "img/lwoop-one-sky.png", brand: "LWOOP+", model: "ONE sky (рассрочка)", basePrice: 708750, price: 737104, capacity: 1, warrantyYears: 7 },
-  { id: "lwoop-onework-sky-i", image: "img/lwoop-onework-sky.png", brand: "LWOOP+", model: "ONE WORK sky (рассрочка)", basePrice: 834375, price: 876094, capacity: 1, warrantyYears: 7 },
-  { id: "lwoop-double-sky-i", image: "img/lwoop-double-sky.png", brand: "LWOOP+", model: "DOUBLE sky (рассрочка)", basePrice: 1143178, price: 1212270, capacity: 2, warrantyYears: 7 },
-  { id: "lwoop-four-sky-i", image: "img/lwoop-four-sky.png", brand: "LWOOP+", model: "FOUR sky (рассрочка)", basePrice: 1361062, price: 1424993, capacity: 4, warrantyYears: 7 }
+  // Capsula
+  { id: "capsula-uno-i", image: "img/capsula-uno.png", brand: "Рассрочка", model: "Capsula UNO (рассрочка 6 мес)", basePrice: 803167, price: 843326, capacity: 1, warrantyYears: 2 },
+  { id: "capsula-duo-i", image: "img/capsula-duo.png", brand: "Рассрочка", model: "Capsula DUO (рассрочка 6 мес)", basePrice: 1418250, price: 1489163, capacity: 2, warrantyYears: 2 },
+  { id: "capsula-quatro-i", image: "img/capsula-quatro.png", brand: "Рассрочка", model: "Capsula QUATRO (рассрочка 6 мес)", basePrice: 1753750, price: 1841438, capacity: 4, warrantyYears: 2 },
+  // Qubius
+  { id: "qubius-one-i", image: "img/qubius-one.png", brand: "Рассрочка", model: "Qubius ONE (рассрочка 6 мес)", basePrice: 923540, price: 969717, capacity: 1, warrantyYears: 5 },
+  { id: "qubius-two-i", image: "img/qubius-team.png", brand: "Рассрочка", model: "Qubius TWO (рассрочка 6 мес)", basePrice: 1549400, price: 1626870, capacity: 4, warrantyYears: 5 },
+  { id: "qubius-team-i", image: "img/qubius-team-plus.png", brand: "Рассрочка", model: "Qubius TEAM (рассрочка 6 мес)", basePrice: 1793400, price: 1883070, capacity: 4, warrantyYears: 5 },
+  // LWOOP
+  { id: "lwoop-one-sky-i", image: "img/lwoop-one-sky.png", brand: "Рассрочка", model: "LWOOP ONE sky (рассрочка 6 мес)", basePrice: 708750, price: 744188, capacity: 1, warrantyYears: 7 },
+  { id: "lwoop-onework-sky-i", image: "img/lwoop-onework-sky.png", brand: "Рассрочка", model: "LWOOP ONE WORK sky (рассрочка 6 мес)", basePrice: 834375, price: 876094, capacity: 1, warrantyYears: 7 },
+  { id: "lwoop-double-sky-i", image: "img/lwoop-double-sky.png", brand: "Рассрочка", model: "LWOOP DOUBLE sky (рассрочка 6 мес)", basePrice: 1143178, price: 1200337, capacity: 2, warrantyYears: 7 },
+  { id: "lwoop-four-sky-i", image: "img/lwoop-four-sky.png", brand: "Рассрочка", model: "LWOOP FOUR sky (рассрочка 6 мес)", basePrice: 1361062, price: 1429116, capacity: 4, warrantyYears: 7 }
 ];
